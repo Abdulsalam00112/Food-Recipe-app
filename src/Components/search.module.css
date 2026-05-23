@@ -1,0 +1,35 @@
+.searchContainer{
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+   justify-self:center;
+   margin-top: 20px;
+   width: max-content;
+}
+
+.input{
+    border:none;
+    border-bottom: 1px solid #e3e4dc;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: #393e46;
+    border-radius: 10px;
+    font-weight: bolder;
+   
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
