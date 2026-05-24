@@ -1,18 +1,19 @@
-import styles from "./item.module.css"
+import styles from "./item.module.css";
+
 export default function Item({ item }) {
   return (
     <div className={styles.itemContainer}>
-      <div className={styles.imageContainer}>
+      <div className={styles.imageWrapper}>
         <img
-          className={styles.Image}
-          src={`https://spoontacular.com/cdn/ingredients_100x100` + item.image}
-          alt=""
+          className={styles.image}
+          src={`https://spoonacular.com/cdn/ingredients_100x100/${item.image}`}
+          alt={item.name}
         />
-        <div className={styles.nameContainer}>
-          <div className={styles.name}>{item.name}</div>
-          <div className={styles.amount}>
-            {item.amount} {item.unit}
-          </div>
+      </div>
+      <div className={styles.infoWrapper}>
+        <div className={styles.name}>{item.name}</div>
+        <div className={styles.amount}>
+          {item.amount} {item.unit}
         </div>
       </div>
     </div>
